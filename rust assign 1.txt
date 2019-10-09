@@ -1,0 +1,61 @@
+fn main() {
+    let product_name = "Table";
+    let product_manufacturer = "Habbit";
+    let price = 30000;
+    println!("QUESTION NO.1");
+    println!("Product name: {}", product_name);
+    println!("Product manufacturer: {}", product_manufacturer);
+    println!("Product price: {}", price);
+}
+
+fn main() {
+    // assign Q2
+    println!("QUESTION NO.2");
+    let a=5; // int value=5
+    println!("Variable value before shadowing a={}",a);
+    let a=a*4; // multiplication and variable shadowed
+    println!("Variable value after multiplication and shadowing a={}",a);
+    }
+
+
+fn main() {
+    // assign Q3
+    println!("QUESTION NO.3");
+    let a:f32=1.5;
+    let b:f32=2.2;
+    println!("First float variables is={}",a);
+    println!("Second float variables is={}",b);
+    let sum=a+b;
+    println!("Sum of two float variables is={}",sum);
+    let diff=a-b;
+    println!("Difference of two float variables is={}",diff);
+    let mult=a*b;
+    println!("Product of two float variables is={}",mult);
+    let div=a/b;
+    println!("Quotient after division of two float variables is={}",div);
+    let rem=a%b;
+    println!("Remainder after division of two float variables is={}",rem);
+    }
+
+fn main() {
+    // assign Q4
+    println!("QUESTION NO.4");
+    println!("Destructuring");
+    let tuple1=("Apple",5.05,5);
+    let (p,q,r)=tuple1;
+    println!("Fruit_Name : {}", p);
+    println!("Weight : {} grams", q);
+    println!("Price : Rs. {}", r);
+    }
+
+fn main() {
+    println!("QUESTION NO.5");
+    let car_names=["Passo","Vitz","Swift","Alto","Mehran"];
+    let car_prices=[800000,900000,950000,700000,400000];
+    println!("Car Name:{}  - Price {}", car_names[0], car_prices[0]);
+    println!("Car Name:{}   - Price {}", car_names[1], car_prices[1]);
+    println!("Car Name:{}  - Price {}", car_names[2], car_prices[2]);
+    println!("Car Name:{}   - Price {}", car_names[3], car_prices[3]);
+    println!("Car Name:{} - Price {}", car_names[4], car_prices[4]);
+    }
+

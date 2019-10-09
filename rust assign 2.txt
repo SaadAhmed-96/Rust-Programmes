@@ -1,0 +1,103 @@
+QUESTION 1
+
+fn main() {
+println!("QUESTION NO.1");
+let number=-10;
+println!("The input number is = {}",number);
+checknumber(number);
+}
+
+fn checknumber(number:i32)
+{
+    if number<0
+    {
+        println!("The number is negative");
+    }
+    else if number==0
+    {
+        println!("The number is zero");
+    }
+    else
+    {
+        println!("The number is positive");
+    }
+    
+}
+
+
+QUESTION 2
+
+fn main() {
+println!("QUESTION NO.02");
+let integer=4;
+let float=2.1;
+let boolean=true;
+let string="apple";
+datatypes(integer,float,boolean,string);
+}
+ 
+fn datatypes(integer:u32,float:f32,boolean:bool,string:&str)
+{
+    println!("The integer you entered is: {}",integer);
+    println!("Te float you entered is: {}",float);
+    println!("The boolean you entered is: {}",boolean);
+    println!("The string you entered is: {}",string);
+}
+
+
+QUESTION 3
+
+fn main() {
+println!("QUESTION NO.3");
+let number=2;
+println!("The input number is = {}", number);
+let (value1,value2)=square(number);
+println!("The number you gave is {} and its square is {} ", value1,value2);
+}
+ 
+fn square(number:u32) -> (u32,u32)
+{
+    
+    let number_square=number*number;
+    (number,number_square)
+   
+}
+
+
+QUESTION 4
+
+fn main() {
+println!("QUESTION NO.4");
+let sub1=80.0;
+let sub2=85.0;
+let value=result(sub1,sub2);
+println!("************REPORT*************");
+println!("You have successfully passed with a percentage={}%",value);
+
+}
+
+fn result(sub1:f32,sub2:f32)->f32
+{
+    println!("Marks in subject 1= {}",sub1);
+    println!("Marks in subject 2= {}",sub2);
+    let sum=sub1+sub2;
+    println!("The sum of marks in both subjects= {}",sum);
+    let aggregate=sum/200.0;
+    println!("The aggregate= {}",aggregate);
+    let percentage=aggregate*100.0;
+    println!("The percentage is={}%",percentage);
+    if percentage>=70.0
+    {
+        println!("You are Pass!");
+        println!("*******CONGRATULATIONS*********");
+    }
+    
+    else
+    {
+        println!("You are Fail");
+        println!("*******PLEASE TRY AGAIN*********");
+    }
+    
+    percentage
+    
+}
